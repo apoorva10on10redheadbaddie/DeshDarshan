@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Crafts - DeshDarshan</title>
+    <!-- <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="drop.css">
+    <link rel="stylesheet" href="local-craft.style.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(0, 0, 62);
+  }
+  .left {
+    color: white;
+    font-size: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    cursor: pointer;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  /* nav ul li a:hover {
+    color: rgb(173, 173, 194);
+    font-size: 0.97rem;
+  } */
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px ;
+    font-size: 2rem;
+    color: #333;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2rem;
+    color: #333;
+    color: white;
+}
+
+.back {
+    background-color: white;
+        
+}
+.events-section {
+    padding: 20px;
+    background-color: #8b4154;;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background-color: #f9e9d2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.event-card p {
+    font-size: 1rem;
+    margin: 10px 20px;
+    color: black;
+}
+
+.date {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: black;
+}
+
+.more-details-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.more-details-btn:hover {
+    background-color: #0056b3;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.events{
+    font-size: large;
+}
+
+#menu a {
+    position: relative; /* Ensures that the pseudo-element positions correctly */
+}
+
+#menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+#menu a:hover::after {
+    transform: scaleX(1); /* Display the underline on hover */
+}
+
+BODY {
+    background-color: blue;
+}
+
+/* Ensure the 'back' div takes up the full height of the page */
+.back {
+    background-color: white;
+    min-height: 100vh; /* Fill the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure content starts at the top */
+}
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0; /* Fixed to the bottom of the viewport */
+    width: 100%; /* Full width of the page */
+    text-align: center; /* Center the content inside the footer */
+    background-color: rgb(0, 0, 62); /* Optional, you can change the background color */
+    color: white; /* Footer text color */
+    padding: 10px 0; /* Padding for footer */
+}
+
+/* Other styles for your events section (keep this as is) */
+.events-section {
+    padding: 20px;
+    background-color: #8b4154;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DeshDarshan</h1>
+        <nav class="sticky">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="local-crafts.html">Local Crafts</a></li>
+                <li><a href="food-dining.html">Food & Dining</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="hidden-gems.html">Hidden Gems</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <main>
+        <section id="local-crafts">
+            <h2>Local Crafts</h2>
+            <p>Discover the rich tradition of local crafts in the locality you plan to visit. Learn from skilled artisans and experience the creation process firsthand.</p>
+
+            <div class="crafts-gallery">
+                
+                <img src="Wooden-Crafts-Rajasthan.webp" alt="wood crafting ">
+                <img src="GREENLOTUS_605545a8-65c6-4ae9-872a-038972b92b7a_1080x.webp" alt="Craft 2">
+                <img src="craft1582711966craft1576217351Mojari-Banner.jpg" alt="Craft 3">
+                <img src="bluepottery2.jpg" alt="Blue Pottery">
+                <img src="pupprt dance.jpg " alt= "PUPPET SHOW">
+                <img src="bangales.jpg" alt="Rajasthani bangales ">
+        </div>
+
+            <br>
+
+            <form id="workshopForm">
+                <h3>Sign up for a Workshop</h3>
+                <label for="workshop-name">Name:</label>
+                <input type="text" id="workshop-name" name="workshop-name" required>
+
+                <label for="workshop-email">Email:</label>
+                <input type="email" id="workshop-email" name="workshop-email" required>
+
+                <label for="workshop-date">Preferred Date:</label>
+                <input type="date" id="workshop-date" name="workshop-date" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main> -->
+    <div class="back">
+        <section class="events-section" id="events">
+            <h1>Local Crafts</h1>
+            <h3>Discover the rich tradition of local crafts in the locality you plan to visit. Learn from skilled artisans and experience the creation process firsthand</h3>
+            <div class="Back">
+                <div class="events-container">
+                    <div class="event-card">
+                        <img src="Wooden-Crafts-Rajasthan.webp" alt="Event 4">
+                        <h3> WOOD CRAFTING</h3>
+                      <b>  <p>Intricate wooden carvings, often used in furniture and decor.</p></b>
+                        <span class="date">Checkout here!</span>
+                        <button class="more-details-btn">More Details</button>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="bluepottery2.jpg" alt="Event 2">
+                        <h3> BLUE POTTERY </h3>
+                       <b> <p>Unique hand-painted pottery with vibrant blue hues.</p></b>
+                        <span class="date">Checkout here!</span>
+                        <button class="more-details-btn">More Details</button>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="bangales.jpg" alt="Event 3">
+                        <h3> BANGLES</h3>
+                        <b><p>Colorful handcrafted bangles symbolising tradition.</p></b>
+                        <span class="date">Checkout here!</span>
+                        <button class="more-details-btn">More Details</button>
+                    </div>
+                    <div class="event-card">
+                        <img src="pupprt dance.jpg" alt="Event 4">
+                        <h3>PUPPET DANCE </h3>
+                       <b> <p>Traditional folk story-telling with intricately crafted puppets.</p></b>
+                        <span class="date">Checkout here!</span>
+                        <button class="more-details-btn">More Details</button>
+                    </div>
+                    <div class="event-card">
+                        <img src="GREENLOTUS_605545a8-65c6-4ae9-872a-038972b92b7a_1080x.webp" alt="Event 4">
+                        <h3> </h3>
+                       <b> <p>MEENAKARI JWELERY</p></b>
+                       <b> <p>Vibrant enamel jewelry with royal designs.</p></b>
+                        <span class="date">Checkout here!</span>
+                        <button class="more-details-btn">More Details</button>
+                    </div>
+                    <div class="event-card">
+                        <img src="craft1582711966craft1576217351Mojari-Banner.jpg" alt="Event 1">
+                        <h3></h3>
+                       <b> <p>MOJARIES</p></b>
+                       <b> <p>Handcrafted leather shoes with unique patterns</p></b>
+                        <span class="date">Checkout here!</span>
+                        <button class="more-details-btn">More Details</button>
+
+                    </div>
+                </div>
+</div>
+
+</div>
+
+
+    <footer>
+        <p>&copy; 2025 DeshDarshan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="drop.js"></script>
+
+</body>
+</html>
